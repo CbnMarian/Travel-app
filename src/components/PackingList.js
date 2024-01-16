@@ -16,7 +16,7 @@ export default function PackingList({
   if (sortBy === "description")
     sortedItems = items
       .slice()
-      .sort((a, b) => a.description.localeCompate(b.description));
+      .sort((a, b) => a.description.localeCompare(b.description));
 
   if (sortBy === "packed")
     sortedItems = items
